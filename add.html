@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Sierra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="add">
+        <form action="form">
+            <label for="image">Image:</label>
+            <p>* Please fill the image box!</p>
+            <input type="file">
+            <img src="" alt="" id="image">
+            <label for="name">Name:</label>
+            <p>* Please fill the name box!</p>
+            <input type="text" id="name">
+            <label for="desc">Description:</label>
+            <p>* Please fill the description box!</p>
+            <input type="text" id="desc">
+            <input type="submit">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>Description:</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/add.js"></script>
+</body>
+</html>

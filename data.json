@@ -1,0 +1,22 @@
+{
+  "Sierra": [
+    {
+      "id": 1,
+      "image": "./assets/images/f-icon-1.png",
+      "name": "Brand Identity",
+      "desc": "Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul."
+    },
+    {
+      "id": 2,
+      "image": "./assets/images/f-icon-2.png",
+      "name": "Online Marketing",
+      "desc": "Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul."
+    },
+    {
+      "id": 3,
+      "image": "./assets/images/f-icon-3.png",
+      "name": "Social Media",
+      "desc": "Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul."
+    }
+  ]
+}

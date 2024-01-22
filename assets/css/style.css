@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+nav .container1 {
+  max-width: 1450px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+nav .container1 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container1 .navbar img {
+  cursor: pointer;
+}
+nav .container1 .navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+nav .container1 .navbar ul li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+nav .container1 .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+nav .container1 .navbar ul li a:hover {
+  color: rgb(11, 16, 51);
+}
+nav .container1 .navbar i {
+  display: none;
+  font-size: 40px;
+  color: rgb(11, 16, 51);
+  cursor: pointer;
+}
+
+.active {
+  color: rgb(11, 16, 51);
+}
+
+.modal {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: rgb(11, 16, 51);
+}
+.modal .container1 {
+  max-width: 1450px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+.modal .container1 ul {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+.modal .container1 ul li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.modal .container1 ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+.modal .container1 ul li a:hover {
+  color: rgb(11, 16, 51);
+}
+
+.none {
+  display: none;
+}
+
+.sect1 {
+  width: 100%;
+  padding: 150px 0;
+  background-image: url("../images/slider-bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sect1 .choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect1 .choose .power {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sect1 .choose .power h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 58px;
+}
+.sect1 .choose .power p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.sect1 .choose .power .btn {
+  width: 160px;
+  height: 55px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect1 .choose .power .btn button {
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid rgb(146, 149, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  background-color: rgb(146, 149, 255);
+  transition: all 0.5s ease;
+}
+.sect1 .choose .power .btn button:hover {
+  background-color: rgb(119, 180, 254);
+  border: 1px solid rgb(119, 180, 254);
+  cursor: pointer;
+}
+.sect1 .choose .image {
+  width: 40%;
+}
+.sect1 .choose .image img {
+  width: 100%;
+}
+
+.sect2 {
+  width: 100%;
+  padding: 80px 0;
+}
+.sect2 .discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.sect2 .discover h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+}
+.sect2 .discover p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: rgb(124, 141, 147);
+}
+.sect2 .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.sect2 .input input {
+  width: 350px;
+  height: 45px;
+  padding-left: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border: 2px solid rgb(11, 16, 51);
+  background-color: white;
+  outline: none;
+}
+.sect2 .input select {
+  width: 150px;
+  height: 45px;
+  background-color: rgb(146, 149, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  padding-left: 10px;
+  outline: none;
+  cursor: pointer;
+  color: rgb(11, 16, 51);
+  border: 1px solid rgb(146, 149, 255);
+}
+.sect2 .brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.sect2 .brand .online {
+  width: 32%;
+  min-height: 400px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  transition: all 0.5s ease;
+}
+.sect2 .brand .online img {
+  width: 27%;
+}
+.sect2 .brand .online h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: rgb(11, 16, 51);
+  text-align: center;
+}
+.sect2 .brand .online p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgb(124, 141, 147);
+  text-align: center;
+}
+.sect2 .brand .online button {
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid rgb(146, 149, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(146, 149, 255);
+  transition: all 0.5s ease;
+  margin-top: 20px;
+  visibility: hidden;
+}
+.sect2 .brand .online button:hover {
+  background-color: rgb(119, 180, 254);
+  border: 1px solid rgb(119, 180, 254);
+  cursor: pointer;
+}
+.sect2 .brand .online:hover button {
+  visibility: visible;
+}
+.sect2 .brand .online:hover {
+  box-shadow: 0px 0px 15px 0px rgba(151, 151, 151, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(151, 151, 151, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(151, 151, 151, 0.75);
+}
+
+.add {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  background-color: burlywood;
+}
+.add form {
+  width: 420px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.add form label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(11, 16, 51);
+  margin-top: 10px;
+}
+.add form img {
+  margin-left: 70px;
+  width: 40%;
+}
+.add form p {
+  display: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: brown;
+}
+.add form input[type=file]::-webkit-file-upload-button {
+  width: 130px;
+  height: 40px;
+  background-color: rgb(11, 16, 51);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  border: 1px solid rgb(11, 16, 51);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.add form input[type=file]::file-selector-button {
+  width: 130px;
+  height: 40px;
+  background-color: rgb(11, 16, 51);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  border: 1px solid rgb(11, 16, 51);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.add form input[type=text] {
+  width: 100%;
+  height: 45px;
+  background-color: white;
+  outline: none;
+  padding-left: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(11, 16, 51);
+  border: 1px solid white;
+}
+.add form input[type=submit] {
+  width: 150px;
+  height: 45px;
+  background-color: rgb(11, 16, 51);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  border: 1px solid rgb(11, 16, 51);
+  margin-left: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.add table {
+  width: 90%;
+  border-collapse: collapse;
+  border: 2px solid rgb(11, 16, 51);
+}
+.add table tr {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  border-bottom: 2px solid rgb(11, 16, 51);
+}
+.add table tr th, .add table tr td {
+  text-align: center;
+  color: brown;
+  border-right: 2px solid rgb(11, 16, 51);
+  padding: 10px;
+}
+.add table tr th button, .add table tr td button {
+  width: 100px;
+  height: 35px;
+  background-color: teal;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: white;
+  border: 1px solid teal;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgb(11, 16, 51);
+}
+footer .copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copy p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: dimgrey;
+}
+footer .copy p a {
+  text-decoration: none;
+  color: rgb(119, 180, 254);
+}
+footer .copy .icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer .copy .icons i {
+  font-size: 16px;
+  color: dimgrey;
+  transition: all 0.5s ease;
+}
+footer .copy .icons i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.details .online {
+  width: 32%;
+  min-height: 400px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  transition: all 0.5s ease;
+}
+.details .online img {
+  width: 27%;
+}
+.details .online h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: rgb(11, 16, 51);
+  text-align: center;
+}
+.details .online p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgb(124, 141, 147);
+  text-align: center;
+}
+.details .online:hover {
+  box-shadow: 0px 0px 15px 0px rgba(151, 151, 151, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(151, 151, 151, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(151, 151, 151, 0.75);
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    max-width: 800px;
+  }
+  nav .container1 .navbar ul {
+    display: none;
+  }
+  nav .container1 .navbar i {
+    display: block;
+  }
+  .sect1 .choose .power h1 {
+    font-size: 40px;
+  }
+  .sect2 .brand .online {
+    width: 47%;
+  }
+  footer .copy {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .copy p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  .sect1 .choose .power h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 1200px;
+  }
+  .sect1 {
+    padding: 150px 0 80px 0;
+  }
+  .sect1 .choose {
+    flex-direction: column;
+  }
+  .sect1 .choose .power {
+    width: 100%;
+  }
+  .sect1 .choose .image {
+    display: none;
+  }
+  .sect2 .brand {
+    flex-direction: column;
+  }
+  .sect2 .brand .online {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
